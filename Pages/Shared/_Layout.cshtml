@@ -1,0 +1,355 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CROSS DOMAIN SOLUTION ARCHITECT</title>
+    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+
+    <!-- Fonts - Mozilla uses Inter and Zilla Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/cdsa.solutions.styles.css" asp-append-version="true" />
+
+    <!-- Mozilla Protocol CSS Framework (if available) -->
+    <link rel="stylesheet" href="https://protocol.mozilla.org/bundle.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Header / Navigation -->
+    <header class="c-navigation">
+        <div class="c-navigation-container">
+            <!-- Logo -->
+            <div class="c-navigation-logo">
+                <a href="/" class="mzp-c-wordmark">CDSA</a>
+            </div>
+
+            <!-- Menu -->
+            <nav class="c-navigation-menu" id="navMenu">
+                <ul class="mzp-c-menu-list">
+                    <li class="mzp-c-menu-item"><a href="/" class="mzp-c-menu-title">Home</a></li>
+                    <li class="mzp-c-menu-item"><a href="#offerings" class="mzp-c-menu-title">Offerings</a></li>
+                    <li class="mzp-c-menu-item"><a href="#contact" class="mzp-c-menu-title">Contact</a></li>
+                    <li class="mzp-c-menu-item"><a href="#study" class="mzp-c-menu-title">Study abroad</a></li>
+                    <li class="mzp-c-menu-item"><a href="#" class="mzp-c-menu-title" id="boardMembersLink">Board Members</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="c-navigation-cta">
+                <a href="mailto:vernard.ngomane@vcdsa.co.za" class="mzp-c-button">
+                    Contact Us
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="mzp-c-menu-button" id="menuBtn" aria-label="Open menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content">
+        @RenderBody()
+    </main>
+
+    <!-- Footer / Newsletter -->
+    <footer class="mzp-c-newsletter">
+        <div class="mzp-c-newsletter-content">
+            <h2 class="mzp-c-newsletter-title">Join CDSA’s Mission</h2>
+            <p class="mzp-c-newsletter-tagline">
+                Subscribe for updates, funding opportunities, and skills development news.
+            </p>
+            <form class="newsletter-form" method="post">
+                <input type="email" name="email" placeholder="Your email" required />
+                <button type="submit" class="mzp-c-button">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+    <div id="boardMembersModal" class="board-modal">
+        <div class="board-modal-content">
+            <div class="board-modal-header">
+                <h2 class="board-modal-title">Board Members</h2>
+                <button class="board-modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="board-modal-body">
+                <div class="member-selector">
+                    <select class="member-dropdown disabled" id="memberSelect">
+                        <option value="">Select a board member to view details</option>
+                        <option value="clife">Mr Clife Mhlongo</option>
+                        <option value="edwin">Mr Edwin Motlokwa</option>
+                        <option value="khumo">Mr Khumo Kotane</option>
+                        <option value="sean">Mr Sean Mukariri</option>
+                        <option value="thabang">Mr Thabang Khoza</option>
+                    </select>
+                </div>
+
+                <!-- Member Profiles -->
+                <div id="clifeProfile" class="member-profile">
+                    <div class="member-header">
+                        <img src="#" alt="Clife Mhlongo" class="member-avatar">
+                        <div class="member-info">
+                            <h3 class="member-name">Clife Mhlongo</h3>
+                            <p class="member-title">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <div class="detail-section">
+                            <div class="detail-label">Experience</div>
+                            <div class="detail-content">
+                                <div class="experience-item">
+                                    <div class="experience-company">LexisNexis</div>
+                                    <div class="experience-role">Software Engineer</div>
+                                    <div class="experience-duration">Oct 2024 - Present · 1 yr</div>
+                                </div>
+                                <div class="experience-item">
+                                    <div class="experience-company">Inzalo EMS</div>
+                                    <div class="experience-role">Intermediate Software Developer</div>
+                                    <div class="experience-duration">Sep 2023 - Oct 2024 · 1 yr 2 mos</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-label">Education</div>
+                            <div class="detail-content">
+                                <div class="education-item">
+                                    <div class="education-degree">Honours, Computer Science and Information Technology</div>
+                                    <div class="education-school">State University of Nizhni Novgorod named after N.I. Lobachevsky (UNN)</div>
+                                    <div class="education-duration">2017 - 2021</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="edwinProfile" class="member-profile">
+                    <div class="member-header">
+                        <img src="#" alt="Edwin Motlokwa" class="member-avatar">
+                        <div class="member-info">
+                            <h3 class="member-name">Edwin Motlokwa</h3>
+                            <p class="member-title">Full Stack Engineer | JavaScript | Angular | C# | .Net Core</p>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <div class="detail-section">
+                            <div class="detail-label">Experience</div>
+                            <div class="detail-content">
+                                <div class="experience-item">
+                                    <div class="experience-company">Alexforbes</div>
+                                    <div class="experience-role">Full Stack Engineer</div>
+                                    <div class="experience-duration">May 2023 - Present · 2 yrs 5 mos</div>
+                                    <div class="experience-description">Developed and maintained RESTful APIs using C# (ASP.NET Core), implemented secure authentication mechanisms, and optimized API performance.</div>
+                                </div>
+                                <div class="experience-item">
+                                    <div class="experience-company">BBD (SARS)</div>
+                                    <div class="experience-role">Software Engineer</div>
+                                    <div class="experience-duration">Jun 2022 - May 2023 · 1 yr</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-label">Skills</div>
+                            <div class="detail-content">
+                                <div class="skills-container">
+                                    <span class="skill-tag">C#</span>
+                                    <span class="skill-tag">ASP.NET Core</span>
+                                    <span class="skill-tag">Angular</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">SQL Server</span>
+                                    <span class="skill-tag">Azure DevOps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="khumoProfile" class="member-profile">
+                    <div class="member-header">
+                        <img src="#" alt="Khumo Kotane" class="member-avatar">
+                        <div class="member-info">
+                            <h3 class="member-name">Khumo Kotane</h3>
+                            <p class="member-title">Recruitment Consultant at Liyema Consulting Group</p>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <div class="detail-section">
+                            <div class="detail-label">Experience</div>
+                            <div class="detail-content">
+                                <div class="experience-item">
+                                    <div class="experience-company">Liyema Consulting Group</div>
+                                    <div class="experience-role">Junior Researcher / Recruitment Consultant</div>
+                                    <div class="experience-duration">Sep 2023 - Present · 2 yrs 1 mo</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-label">Education</div>
+                            <div class="detail-content">
+                                <div class="education-item">
+                                    <div class="education-degree">Bachelor's degree, International Relations and Affairs</div>
+                                    <div class="education-school">Lobachevsky University</div>
+                                    <div class="education-duration">Sep 2018 - Jun 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="seanProfile" class="member-profile">
+                    <div class="member-header">
+                        <img src="#" alt="Sean Mukariri" class="member-avatar">
+                        <div class="member-info">
+                            <h3 class="member-name">Sean Mukariri</h3>
+                            <p class="member-title">Data Engineer & Scientist</p>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <div class="detail-section">
+                            <div class="detail-label">Experience</div>
+                            <div class="detail-content">
+                                <div class="experience-item">
+                                    <div class="experience-company">Empire Partner Foundation</div>
+                                    <div class="experience-role">Data Engineer</div>
+                                    <div class="experience-duration">Jan 2023 - Present · 2 yrs 9 mos</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-label">Education</div>
+                            <div class="detail-content">
+                                <div class="education-item">
+                                    <div class="education-degree">Computer Science & Information Technology</div>
+                                    <div class="education-school">Nizhny Novgorod State University</div>
+                                    <div class="education-duration">Sep 2019 - Aug 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="thabangProfile" class="member-profile">
+                    <div class="member-header">
+                        <img src="#" alt="Thabang Khoza" class="member-avatar">
+                        <div class="member-info">
+                            <h3 class="member-name">Thabang Khoza</h3>
+                            <p class="member-title">Fullstack Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <div class="detail-section">
+                            <div class="detail-label">Experience</div>
+                            <div class="detail-content">
+                                <div class="experience-item">
+                                    <div class="experience-company">Prime Reason Pty Ltd</div>
+                                    <div class="experience-role">C# Developer</div>
+                                    <div class="experience-duration">Jan 2023 - Present · 2 yrs 9 mos</div>
+                                </div>
+                                <div class="experience-item">
+                                    <div class="experience-company">SovTech</div>
+                                    <div class="experience-role">Software Engineer</div>
+                                    <div class="experience-duration">Feb 2022 - Nov 2022 · 10 mos</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-label">Education</div>
+                            <div class="detail-content">
+                                <div class="education-item">
+                                    <div class="education-degree">Bachelor's degree, Information Technology</div>
+                                    <div class="education-school">State University of Nizhni Novgorod</div>
+                                    <div class="education-duration">Sep 2017 - Jul 2021</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+            // Board Members Modal functionality
+        const boardMembersLink = document.getElementById('boardMembersLink');
+        const boardModal = document.getElementById('boardMembersModal');
+        const closeModal = document.getElementById('closeModal');
+        const memberSelect = document.getElementById('memberSelect');
+
+        // Open modal when Board Members link is clicked
+        boardMembersLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            boardModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close modal when X is clicked
+        closeModal.addEventListener('click', () => {
+            boardModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            memberSelect.value = '';
+            hideAllProfiles();
+        });
+
+        // Close modal when clicking outside
+        boardModal.addEventListener('click', (e) => {
+            if (e.target === boardModal) {
+                boardModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                memberSelect.value = '';
+                hideAllProfiles();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && boardModal.style.display === 'block') {
+                boardModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                memberSelect.value = '';
+                hideAllProfiles();
+            }
+        });
+
+        // Handle member selection
+        memberSelect.addEventListener('change', (e) => {
+            const selectedMember = e.target.value;
+            hideAllProfiles();
+
+            if (selectedMember) {
+                const profileElement = document.getElementById(selectedMember + 'Profile');
+                if (profileElement) {
+                    profileElement.classList.add('active');
+                }
+            }
+        });
+
+        // Function to hide all member profiles
+        function hideAllProfiles() {
+            const allProfiles = document.querySelectorAll('.member-profile');
+            allProfiles.forEach(profile => {
+                profile.classList.remove('active');
+            });
+        }
+    </script>
+
+</body>
+</html>

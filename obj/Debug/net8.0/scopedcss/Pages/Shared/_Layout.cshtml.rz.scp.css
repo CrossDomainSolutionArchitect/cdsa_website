@@ -1,0 +1,165 @@
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}*/
+/* ============================================
+   Layout Styles
+   ============================================ */
+
+/* Navbar & Header */
+a.navbar-brand[b-0qn7nj2tey] {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a[b-0qn7nj2tey] {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.btn-primary[b-0qn7nj2tey] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-0qn7nj2tey], .nav-pills .show > .nav-link[b-0qn7nj2tey] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top[b-0qn7nj2tey] {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-0qn7nj2tey] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-0qn7nj2tey] {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-0qn7nj2tey] {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Footer */
+.footer[b-0qn7nj2tey] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+/* Cards (for Index offerings section) */
+.card-mozilla[b-0qn7nj2tey] {
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card-mozilla:hover[b-0qn7nj2tey] {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+.card-image[b-0qn7nj2tey] {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body[b-0qn7nj2tey] {
+    padding: 1rem;
+}
+
+.card-title[b-0qn7nj2tey] {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-text[b-0qn7nj2tey] {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.spotlight-link[b-0qn7nj2tey] {
+    font-weight: 500;
+    color: #1b6ec2;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+    .spotlight-link:hover[b-0qn7nj2tey] {
+        text-decoration: underline;
+    }
+
+/* Hero Buttons */
+.hero-buttons .btn-primary[b-0qn7nj2tey],
+.hero-buttons .btn-outline[b-0qn7nj2tey] {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.hero-buttons .btn-outline[b-0qn7nj2tey] {
+    border: 1px solid #1b6ec2;
+    color: #1b6ec2;
+    background: transparent;
+}
+
+    .hero-buttons .btn-outline:hover[b-0qn7nj2tey] {
+        background-color: #1b6ec2;
+        color: #fff;
+    }
