@@ -30,3 +30,4 @@ C:\Users\VERNARD\source\repos\cdsa.solutions\cdsa.solutions\obj\Release\net8.0\r
 C:\Users\VERNARD\source\repos\cdsa.solutions\cdsa.solutions\obj\Release\net8.0\cdsa.solutions.pdb
 C:\Users\VERNARD\source\repos\cdsa.solutions\cdsa.solutions\obj\Release\net8.0\cdsa.solutions.genruntimeconfig.cache
 C:\Users\VERNARD\source\repos\cdsa.solutions\cdsa.solutions\obj\Release\net8.0\ref\cdsa.solutions.dll
+C:\Users\VERNARD\source\repos\cdsa.solutions\cdsa.solutions\obj\Release\net8.0\cdsa.solutions.sourcelink.json

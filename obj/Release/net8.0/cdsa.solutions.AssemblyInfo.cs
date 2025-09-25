@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cdsa.solutions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40cced380e11781f323288e364d00a1660853da5")]
 [assembly: System.Reflection.AssemblyProductAttribute("cdsa.solutions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cdsa.solutions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
